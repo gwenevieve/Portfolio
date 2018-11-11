@@ -1,0 +1,103 @@
+/* Edit this file */
+
+$yellow: #F8F32B;
+$purple: #7067CF;
+$darkpurple: #212129;
+
+body {
+  background-color: $darkpurple;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  left: 40px;
+  bottom: 0px;
+  ul {
+    padding: 0px 5px;
+    text-align: center;
+  li, a {
+    list-style-type: none;
+    padding: 12px 0px;
+    color: $yellow;
+    text-decoration: none;
+}}}
+
+.overlay::after {
+  content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: $yellow;
+    margin: 0px auto;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 55px;
+  color: $yellow;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 24px;
+  color: $yellow;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+p {
+  color: #e0de96;
+  font-family: 'Anonymous Pro', monospace;
+  margin: 0;
+}
+
+.introduction-section, .about-section, .project-section {
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+  ul {
+    list-style-image: url('/assets/img/list-icon.png');
+    li {
+      padding: 12px 8px;
+      color: $yellow;
+  }
+}
+
+
+.subtitle {
+  font-size: 24px;
+}
+
+.button--contact {
+  padding: 12px 24px;
+  background: unset;
+  border: 1px solid $yellow;
+  border-radius: 0px;
+  color: $yellow;
+  &:hover {
+    background-color: $yellow;
+    border-radius: 0px;
+    color: #000000;
+}
+a {
+  color: unset;
+  text-decoration: unset;
+}
+}
+
+footer {
+  p {
+    color: $yellow;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .overlay {
+    display: none;
+  }
+}
