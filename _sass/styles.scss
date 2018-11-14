@@ -57,11 +57,11 @@ p {
 
 .introduction-section, .about-section, .project-section {
   padding-top: 150px;
-  min-height: 100vh;
+//  min-height: 90vh;
 }
 
   ul {
-    list-style-image: url('/assets/img/list-icon.png');
+  //  list-style-image: url('/assets/img/list-icon.png');
     li {
       padding: 12px 8px;
       color: $yellow;
@@ -90,6 +90,10 @@ a {
 }
 }
 
+.animated {
+  display: none;
+}
+
 footer {
   p {
     color: $yellow;
@@ -99,5 +103,9 @@ footer {
 @media only screen and (max-width: 576px) {
   .overlay {
     display: none;
+  }
+
+  .introduction-section, .about-section, .project-section {
+    padding-top: 50px;
   }
 }
