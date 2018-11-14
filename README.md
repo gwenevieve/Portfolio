@@ -8,3 +8,4 @@ my website portfolio
 * scss
 * bootstrap 4
 * responsive
+* jquery / javascript
