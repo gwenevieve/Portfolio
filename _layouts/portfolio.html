@@ -34,10 +34,11 @@
   <link rel="stylesheet" href="/assets/main.css">
   <link type="application/atom+xml" rel="alternate" href="{{site.url}}/feed.xml" title="{{site.title}}" />
 <meta name="google-site-verification" content="A57efludnssxmO1yNqmYfD4oaiCQ52cKIfG54AH6iVs" />
+{{site.data.ga.google_analytics.head_tag}}
 </head>
 
 <body>
-
+  {{site.data.ga.google_analytics.body_tag}}
   {% include header.html %} {% include content.html %} {% include footer.html %}
 
   <script src="/assets/js/jquery-3.3.1.min.js"></script>
