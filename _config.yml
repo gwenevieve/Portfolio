@@ -16,7 +16,7 @@
 title: Marie Felton | Portfolio
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.mariefelton.com" # the base hostname & protocol for your site, e.g. http://example.com
-description: "Hi! I'm Marie Felton - a web developer that specializes in beautiful, responsive websites."
+description: "Hi! I'm Marie Felton - a web developer that specializes in beautiful, accessible, and responsive websites."
 
 # Build settings
 markdown: kramdown
