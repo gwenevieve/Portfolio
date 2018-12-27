@@ -66,10 +66,10 @@ p {
 }
 
 ul {
-
-  //  list-style-image: url('/assets/img/list-icon.png');
+  padding: 0px;
   li {
-    padding: 12px 8px;
+    padding: 8px 0px;
+    list-style-type: none;
     color: $yellow;
   }
 }

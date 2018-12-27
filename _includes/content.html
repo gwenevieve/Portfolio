@@ -15,7 +15,7 @@
     <h2 class="pb-5">About</h2>
   </div>
   <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
-    <p class="animated">Welcome to my small space on the web! I'm Marie, a front-end developer / UX designer, with a
+    <p>Welcome to my small space on the web! I'm Marie, a front-end developer / UX designer, with a
       spackle of cyber security and networking added in. I graduated from Seneca College's Webmaster Program in 2017,
       and from HackerYou's UX Design in 2018.
       <br><br>
@@ -26,15 +26,17 @@
   </div>
 </div>
 
-<!--<div class="row title stack-section">
+<div class="row title stack-section">
   <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
-    <h2>{{site.data.sections.section_title}}</h2>
+    <h2 class="pb-5">{{site.data.sections.section_title}}</h2>
   </div>
   <div class="pl-sm-5 pl-md-5 col-10 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
+    <p>Some of the technologies I've recently worked with.
+    </p>
     <ul>
-      {% for item in site.data.sections.docs %}
-         <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% for item in site.data.sections.skills %}
+      <li>{{ item.skill }}</li>
       {% endfor %}
-   </ul>
+    </ul>
   </div>
-</div>-->
+</div>

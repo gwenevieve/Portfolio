@@ -1,11 +1,11 @@
 section_title: Technology Stack
-docs:
+skills:
 
-- title: Introduction
-  url: introduction.html
-
-- title: Configuration
-  url: configuration.html
-
-- title: Deployment
-  url: deployment.html
+- skill: HTML5
+- skill: CSS (SCSS, LESS)
+- skill: Javascript
+- skill: PHP
+- skill: Adobe Creative Suite (Photoshop, Illustrator)
+- skill: Sketch
+- skill: React
+- skill: Docker/Vagrant
