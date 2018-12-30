@@ -1,6 +1,6 @@
 $yellow: #F8F32B;
-$purple: #7067CF;
 $darkpurple: #212129;
+$purple: #373742;
 
 body {
   background-color: $darkpurple;
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 34px;
   color: $yellow;
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -60,16 +60,19 @@ p {
 
 .introduction-section,
 .about-section,
-.stack-section {
+.stack-section,
+.projects-section {
   padding-top: 150px;
   //  min-height: 90vh;
 }
 
 ul {
   padding: 0px;
+  padding-left: 16px;
+
   li {
     padding: 8px 0px;
-    list-style-type: none;
+    list-style-type: square;
     color: $yellow;
   }
 }
@@ -108,14 +111,68 @@ footer {
   }
 }
 
+.projects-section {
+  ol {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+
+    li {
+      background: $purple;
+      color: $yellow;
+      list-style-position: inside;
+      width: 33.3%;
+      height: 200px;
+      margin-right: 36px;
+      padding: 8px;
+    }
+  }
+
+  a {
+    color: unset;
+    text-decoration: unset;
+  }
+
+  i {
+    margin-right: 8px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .overlay {
-    display: none;
+    position: initial;
+    margin-left: 8.333333%;;
+
+    &::after {
+      display: none;
+    }
+
+    ul {
+      padding: 0px;
+      display: flex;
+
+      li {
+        padding-right: 16px;
+      }
+    }
   }
 
   .introduction-section,
   .about-section,
-  .project-section {
+  .stack-section,
+  .projects-section {
     padding-top: 50px;
+  }
+
+  .projects-section {
+    ol {
+      flex-direction: column;
+
+      li {
+        margin: 12px 0px;
+        height: 300px;
+        width: 100%;
+      }
+    }
   }
 }

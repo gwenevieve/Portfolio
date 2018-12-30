@@ -6,7 +6,8 @@
   <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
     <p class="pb-5">I'm a Front-End Developer / UX Designer from Markham, Ontario. I aspire to create beautiful,
       functional websites that are accessible to everyone.</p>
-    <a href="mailto:marie@mariefelton.com"><button class="text-center btn button--contact">Contact me</button></a>
+    <a title="Email Link" href="mailto:marie@mariefelton.com"><button class="text-center btn button--contact">Contact
+        me</button></a>
   </div>
 </div>
 
@@ -30,13 +31,38 @@
   <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
     <h2 class="pb-5">{{site.data.sections.section_title}}</h2>
   </div>
-  <div class="pl-sm-5 pl-md-5 col-10 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
-    <p>Some of the technologies I've recently worked with.
+  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
+    <p class="pb-3">Some of the technologies I've recently worked with.
     </p>
     <ul>
-      {% for item in site.data.sections.skills %}
+        {% for item in site.data.sections.skills %}
       <li>{{ item.skill }}</li>
       {% endfor %}
     </ul>
+  </div>
+</div>
+
+<div class="row title projects-section">
+  <div class="pl-sm-5 pl-md-5 col-12 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
+    <h2 class="pb-5">Projects</h2>
+  </div>
+  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-11 offset-sm-1 col-md-11 col-lg-11 col-xl-11 offset-xl-1">
+    <p class="pb-3">Some of the personal projects I've worked on:
+    </p>
+    <ol>
+      <li>
+        LCBO Mock Site
+        <p class="pb-3">A responsive website that uses the unofficial LCBO API to bring back results.</p>
+      <!--<a title="LCBO API Project Link" href="#"><i class="fas fa-link"></i>Link</a>-->
+      <a title="LCBO API Project Link" href="https://github.com/gwenevieve"><i class="fab fa-github"></i>GitHub Link</a>
+      </li>
+      <li>
+          Portfolio Site
+          <p class="pb-3">My portfolio!</p>
+        <!--<a title="LCBO API Project Link" href="#"><i class="fas fa-link"></i>Link</a>-->
+        <a title="Portfolio Link" href="https://github.com/gwenevieve/Portfolio"><i class="fab fa-github"></i>GitHub Link</a>
+  
+      </li>
+    </ol>
   </div>
 </div>
