@@ -1,18 +1,18 @@
 $(document).ready(function() {
     
-      var carousel = $('.carousel');
-      var items = $('.carousel-item');
+      let carousel = $('.carousel');
+      let items = $('.carousel-item');
     
     setInterval(function() {
-        var currentItem;
-        var lastItem = $('.last');
+        let currentItem;
+        let lastItem = $('.last');
     
         lastItem.removeClass('last');
           currentItem = next(lastItem);
           carousel.removeClass('reversing');
     
         currentItem.addClass('last').css('order', 1);
-        for (var i = 2; i <= items.length; i++) {
+        for (i = 2; i <= items.length; i++) {
           currentItem = next(currentItem).css('order', i);
         }
     
@@ -50,7 +50,7 @@ $(document).ready(function() {
     
         // I think I'll re-write this with async / await when I get a chance since callback hell is real
     
-        var resultData = function(data) {};
+        let resultData = function(data) {};
         jQuery.ajax({
           url: 'https://lcboapi.com/products?q=' + $('input').val() + '/&per_page=30',
           async: true,
@@ -93,10 +93,10 @@ $(document).ready(function() {
                 }
               })
             })
-            var displayResults = (function() {
+            let displayResults = (function() {
               $('#productData').html('');
               $.each(products, function(i, products) {
-                var stores = products.stores;
+                let stores = products.stores;
                 $('#productData').append("<div class='product-child'><img class='product-img' src=" + products.image + "><p>" + products.name + "</p><button class='product-desc__button'>Click here for details +</button><div class='modal'><div class='modal-content'><span class='close'>&times;</span><div class='modal-picture'><img width='200' src=" + products.image + "></div><div class='modal-inner'><h3>" + products.name + "</h3>" + products.description + "</div><p>" + "</p></div></div>").fadeIn(5000);
               })
             })();
