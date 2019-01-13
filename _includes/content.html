@@ -1,41 +1,45 @@
 <div class="row introduction-section">
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-8 col-lg-10 col-xl-11 offset-xl-1"
+  >
     <p class="pb-2 pl-1 subtitle">Hi there, I'm</p>
     <h1 class="pb-5">Marie Sarah Felton</h1>
   </div>
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
-    <p class="pb-5">I'm a Front-End Developer / UX Designer from Markham, Ontario. I aspire to create beautiful,
-      functional websites that are accessible to everyone.</p>
-    <a title="Email Link" href="mailto:marie@mariefelton.com"><button class="text-center btn button--contact">Contact
-        me</button></a>
-  </div>
-</div>
-
-<div class="row title about-section">
-  <div class="pl-sm-5 pl-md-5 col-12 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
-    <h2 class="pb-5">About</h2>
-  </div>
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
-    <p>Welcome to my small space on the web! I'm Marie, a front-end developer / UX designer, with a
-      spackle of cyber security and networking added in. I graduated from Seneca College's Webmaster Program in 2017,
-      and from HackerYou's UX Design in 2018.
-      <br><br>
-      I've also done some brief studying at Ryerson University for Cyber Security and Digital Forensics, along with
-      Networking at Centennial College.
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-6 col-lg-6 col-xl-6 offset-xl-1"
+  >
+    <p class="pb-5">
+      I'm a Front-End Developer / UX Designer from Markham, Ontario. I aspire to
+      create beautiful, functional websites that are accessible to everyone.
+      <br />
+      <br />
+      Welcome to my small space on the web! I'm Marie, a front-end developer /
+      UX designer, with a spackle of cyber security and networking added in. I
+      graduated from Seneca College's Webmaster Program in 2017, and from
+      HackerYou's UX Design in 2018. <br />
+      <br />
+      I've also done some brief studying at Ryerson University for Cyber
+      Security and Digital Forensics, along with Networking at Centennial
+      College.
     </p>
-
+    <a title="Email Link" href="mailto:marie@mariefelton.com"
+      ><button class="text-center btn button">Contact me</button></a
+    >
   </div>
 </div>
 
 <div class="row title stack-section">
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
-    <h2 class="pb-5">{{site.data.sections.section_title}}</h2>
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-8 col-lg-10 col-xl-11 offset-xl-1"
+  >
+    <h2 class="pb-5">{{ site.data.sections.tech_stack.section_title }}</h2>
   </div>
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-6 col-lg-6 col-xl-6 offset-xl-1">
-    <p class="pb-3">Some of the technologies I've recently worked with.
-    </p>
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-6 col-lg-6 col-xl-6 offset-xl-1"
+  >
+    <p class="pb-3">Some of the technologies I've recently worked with.</p>
     <ul>
-        {% for item in site.data.sections.skills %}
+      {% for item in site.data.sections.tech_stack.skills %}
       <li>{{ item.skill }}</li>
       {% endfor %}
     </ul>
@@ -43,27 +47,73 @@
 </div>
 
 <div class="row title projects-section">
-  <div class="pl-sm-5 pl-md-5 col-12 offset-1 col-xs-8 col-sm-8 offset-sm-1 col-md-8 col-lg-10 col-xl-10 offset-xl-1">
+  <div
+    class="pl-sm-5 pl-md-5 col-12 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-8 col-lg-10 col-xl-10 offset-xl-1"
+  >
     <h2 class="pb-5">Projects</h2>
   </div>
-  <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-11 offset-sm-1 col-md-11 col-lg-11 col-xl-11 offset-xl-1">
-    <p class="pb-3">Some of the personal projects I've worked on:
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-6 col-lg-6 col-xl-6 offset-xl-1"
+  >
+    <p class="pb-4">
+      A few personal projects that I've worked on by myself or with friends. If
+      you want to collaborate on something, send me an email!
     </p>
-    <ol>
-      <li>
-        LCBO Mock Site
-        <p class="pb-3">A responsive website that uses the unofficial LCBO API to bring back results.</p>
-      <a title="LCBO API Project Link" href="/projects/lcbo-api-project"><i class="fas fa-link"></i>Link</a>
-      <br>
-      <a title="LCBO API Project Link" href="https://github.com/gwenevieve"><i class="fab fa-github"></i>GitHub Link</a>
-      </li>
-      <li>
-          Portfolio Site
-          <p class="pb-3">My portfolio!</p>
-        <!--<a title="LCBO API Project Link" href="#"><i class="fas fa-link"></i>Link</a>-->
-        <a title="Portfolio Link" href="https://github.com/gwenevieve/Portfolio"><i class="fab fa-github"></i>GitHub Link</a>
-  
-      </li>
-    </ol>
+  </div>
+  <div
+    class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-10 offset-sm-2 col-md-10 col-lg-10 col-xl-10 offset-xl-1"
+  >
+    <div class="projects-section__container">
+      <div class="pr-5">
+        <h3 class="pb-2 pt-5">
+          {{ site.data.sections.project_section_one.section_title }}
+        </h3>
+        <p class="pb-4">
+          Fully responsive website that uses the unofficial LCBO API to make
+          searches. Has a responsive carousel and pop-up modal.
+        </p>
+        <ul>
+          {% for item in site.data.sections.project_section_one.tech %}
+          <li>{{ item.tech }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn button mr-3 mr-md-2">
+          <a href="https://github.com/gwenevieve">GitHub Link</a>
+        </button>
+        <button class="btn button mt-4 mt-sm-0 ml-0 ml-md-2">
+          <a href="/projects/lcbo-api-project/">Live Link</a>
+        </button>
+      </div>
+      <img
+        class="project-image"
+        src="/assets/img/LCBO-project-ipad-iphone.png"
+        alt="Screenshot of LCBO project on iPad and iPhone"
+      />
+    </div>
+
+    <div class="projects-section__container">
+      <div class="pr-5">
+        <h3 class="pb-2 pt-5">
+          {{ site.data.sections.project_section_two.section_title }}
+        </h3>
+        <p class="pb-4">
+          Fully responsive website that uses the unofficial LCBO API to make
+          searches. Has a responsive carousel and pop-up modal.
+        </p>
+        <ul>
+          {% for item in site.data.sections.project_section_two.tech %}
+          <li>{{ item.tech }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn button mr-3 mr-md-2">
+          <a href="https://github.com/gwenevieve">GitHub Link</a>
+        </button>
+      </div>
+      <img
+        class="project-image"
+        src="/assets/img/LCBO-project-ipad-iphone.png"
+        alt="Screenshot of LCBO project on iPad and iPhone"
+      />
+    </div>
   </div>
 </div>

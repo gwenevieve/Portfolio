@@ -1,27 +1,96 @@
-$yellow: #F8F32B;
-$darkpurple: #212129;
-$purple: #373742;
+// Brand colors //
+
+$offwhite: #d6d6d6;
+$greige: #1b1b1b;
+$gray: #313131;
+
+// Fonts
+
+$title: "Poppins", sans-serif;
+$text: "Lato", sans-serif;
 
 body {
-  background-color: $darkpurple;
-  font-family: 'Anonymous Pro', monospace;
+  background-color: $greige;
+
+  font-family: $text;
   font-size: 16px;
+}
+
+h1 {
+  color: $offwhite;
+
+  font-size: 54px;
+  font-family: $title;
+  line-height: 52px;
+
+  margin: 0;
+
+  &::after {
+    content: "";
+    background-color: $offwhite;
+
+    margin-left: 16px;
+    width: 3px;
+    height: 50px;
+
+    position: absolute;
+
+    -webkit-animation: blinking-type 1.5s infinite;
+    animation: blinking-type 1.5s infinite;
+  }
+}
+
+h2 {
+  color: $offwhite;
+
+  font-size: 36px;
+  font-family: $title;
+  line-height: 34px;
+
+  margin: 0;
+}
+
+h3 {
+  color: $offwhite;
+
+  font-size: 28px;
+  font-family: $title;
+  line-height: 26px;
+
+  margin: 0;
+}
+
+p {
+  color: $offwhite;
+
+  font-size: 18px;
+  font-family: $text;
+  line-height: 30px;
+
+  margin: 0;
+}
+
+li {
+  font-size: 18px;
 }
 
 .overlay {
   position: fixed;
-  left: 40px;
+  left: 0px;
   bottom: 0px;
 
   ul {
-    padding: 0px 5px;
+    padding: 0px 15px;
     text-align: center;
 
     li,
     a {
-      list-style-type: none;
+      font-family: $text;
+      color: $offwhite;
+
       padding: 12px 0px;
-      color: $yellow;
+
+      list-style-type: none;
       text-decoration: none;
     }
   }
@@ -32,30 +101,8 @@ body {
   display: block;
   width: 1px;
   height: 200px;
-  background-color: $yellow;
+  background-color: $offwhite;
   margin: 0px auto;
-}
-
-h1 {
-  font-size: 54px;
-  line-height: 55px;
-  color: $yellow;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-}
-
-h2 {
-  font-size: 36px;
-  line-height: 34px;
-  color: $yellow;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-}
-
-p {
-  color: #e0de96;
-  font-family: 'Anonymous Pro', monospace;
-  margin: 0;
 }
 
 .introduction-section,
@@ -71,32 +118,40 @@ ul {
   padding-left: 16px;
 
   li {
+    color: $offwhite;
+
     padding: 8px 0px;
+
     list-style-type: square;
-    color: $yellow;
   }
 }
-
 
 .subtitle {
   font-size: 24px;
 }
 
-.button--contact {
-  padding: 12px 24px;
+.button {
+  font-family: $text;
+
+  color: $offwhite;
   background: unset;
-  border: 1px solid $yellow;
-  border-radius: 0px;
-  color: $yellow;
+
+  border: 1px solid $offwhite;
+  border-radius: 5px;
+
+  padding: 12px 0px;
+  min-width: 120px;
 
   &:hover {
-    background-color: $yellow;
-    border-radius: 0px;
+    background-color: $offwhite;
     color: #000000;
+
+    border-radius: 5px;
   }
 
   a {
     color: unset;
+
     text-decoration: unset;
   }
 }
@@ -107,7 +162,7 @@ ul {
 
 footer {
   p {
-    color: $yellow;
+    color: $offwhite;
   }
 }
 
@@ -115,15 +170,22 @@ footer {
   ol {
     display: flex;
     flex-direction: row;
+
     padding-left: 0px;
 
     li {
-      background: $purple;
-      color: $yellow;
-      list-style-position: inside;
+      background: $gray;
+      color: $offwhite;
+
       width: 33.3%;
       margin-right: 36px;
       padding: 24px;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      list-style-position: inside;
     }
   }
 
@@ -139,21 +201,7 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .overlay {
-    position: initial;
-    margin-left: 8.333333%;;
-
-    &::after {
-      display: none;
-    }
-
-    ul {
-      padding: 0px;
-      display: flex;
-
-      li {
-        padding-right: 16px;
-      }
-    }
+    display: none;
   }
 
   .introduction-section,
@@ -174,5 +222,36 @@ footer {
         width: 100%;
       }
     }
+  }
+}
+
+.projects-section__container {
+  display: flex;
+  flex-direction: row;
+
+  .project-image {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section__container {
+    flex-direction: column-reverse;
+    .project-image {
+      width: 100%;
+    }
+  }
+}
+
+@-webkit-keyframes blinking-type {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

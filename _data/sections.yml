@@ -1,11 +1,31 @@
-section_title: Technology Stack
-skills:
+tech_stack:
+  section_title: Technology Stack
+  skills:
+    - skill: HTML5
+    - skill: CSS (SCSS, LESS)
+    - skill: Javascript
+    - skill: PHP
+    - skill: Adobe Creative Suite (Photoshop, Illustrator)
+    - skill: Sketch
+    - skill: React
+    - skill: Docker/Vagrant
+    - skill: Bash
 
-- skill: HTML5
-- skill: CSS (SCSS, LESS)
-- skill: Javascript
-- skill: PHP
-- skill: Adobe Creative Suite (Photoshop, Illustrator)
-- skill: Sketch
-- skill: React
-- skill: Docker/Vagrant
+project_section_one:
+  section_title: LCBO API Project
+  tech:
+    - tech: HTML5 / YAML
+    - tech: CSS (Flexbox)
+    - tech: JavaScript (jQuery)
+    - tech: JSON API
+    - tech: Middleman
+
+project_section_two:
+  section_title: Portfolio
+  tech:
+    - tech: HTML5 / YAML
+    - tech: SCSS
+    - tech: Jekyll
+    - tech: Liquid
+    - tech: CSS Keyframes
+    - tech: Bootstrap 4
