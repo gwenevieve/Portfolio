@@ -9,18 +9,13 @@
     class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-8 offset-sm-2 col-md-6 col-lg-6 col-xl-6 offset-xl-1"
   >
     <p class="pb-5">
-      I'm a Front-End Developer / UX Designer from Markham, Ontario. I aspire to
-      create beautiful, functional websites that are accessible to everyone.
-      <br />
-      <br />
       Welcome to my small space on the web! I'm Marie, a front-end developer /
-      UX designer, with a spackle of cyber security and networking added in. I
-      graduated from Seneca College's Webmaster Program in 2017, and from
+      UX designer that aspires to create breathtaking digital experiences. I
+      graduated from Seneca College's Web Development in 2017, and from
       HackerYou's UX Design in 2018. <br />
       <br />
-      I've also done some brief studying at Ryerson University for Cyber
-      Security and Digital Forensics, along with Networking at Centennial
-      College.
+      I've also studied at Ryerson University for Cyber Security and Digital
+      Forensics, along with Networking at Centennial College.
     </p>
     <a title="Email Link" href="mailto:marie@mariefelton.com"
       ><button class="text-center btn button">Contact me</button></a
@@ -65,14 +60,14 @@
   >
     <div class="projects-section__container">
       <div class="pr-5">
-        <h3 class="pb-2 pt-5">
+        <h3 class="pb-3 pt-5">
           {{ site.data.sections.project_section_one.section_title }}
         </h3>
-        <p class="pb-4">
+        <p class="pb-4 project-desc">
           Fully responsive website that uses the unofficial LCBO API to make
           searches. Has a responsive carousel and pop-up modal.
         </p>
-        <ul>
+        <ul class="pb-3">
           {% for item in site.data.sections.project_section_one.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
@@ -91,16 +86,15 @@
       />
     </div>
 
-    <div class="projects-section__container">
+    <div class="projects-section__container pt-5">
       <div class="pr-5">
         <h3 class="pb-2 pt-5">
           {{ site.data.sections.project_section_two.section_title }}
         </h3>
-        <p class="pb-4">
-          Fully responsive website that uses the unofficial LCBO API to make
-          searches. Has a responsive carousel and pop-up modal.
+        <p class="pb-4 project-desc">
+          My portfolio website. Fully responsive. Assets created by me.
         </p>
-        <ul>
+        <ul class="pb-3">
           {% for item in site.data.sections.project_section_two.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
@@ -111,8 +105,8 @@
       </div>
       <img
         class="project-image"
-        src="/assets/img/LCBO-project-ipad-iphone.png"
-        alt="Screenshot of LCBO project on iPad and iPhone"
+        src="/assets/img/portfolio-project-macbook.png"
+        alt="Screenshot of portfolio project on Macbook"
       />
     </div>
   </div>
