@@ -222,6 +222,11 @@ footer {
         width: 100%;
       }
     }
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
