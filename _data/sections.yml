@@ -12,16 +12,33 @@ tech_stack:
     - skill: Bash
 
 project_section_one:
+  section_title: Live Stock Dashboard + Search
+  section_desc: A stock dashboard that gathers live stock data during market hours for my pre-selected watch list. Displays a graph of items in one of my play portfolios.
+  tech:
+    - tech: HTML5
+    - tech: CSS (SCSS)
+    - tech: Bootstrap 4
+    - tech: JavaScript + jQuery
+    - tech: Node.js (Express, SSE, Express)
+    - tech: JSON API (Questrade)
+    - tech: Gulp + Gulp
+    - tech: Sketch + Photoshop for concept art
+
+project_section_two:
   section_title: LCBO API Project
+  section_desc:
+    Fully responsive website that uses the unofficial LCBO API to make
+    searches. Has a responsive carousel and pop-up modal.
   tech:
     - tech: HTML5 / YAML
     - tech: CSS (Flexbox)
-    - tech: JavaScript (jQuery)
+    - tech: JavaScript + jQuery
     - tech: JSON API
     - tech: Middleman
 
-project_section_two:
+project_section_three:
   section_title: Portfolio
+  section_desc: My portfolio website. Fully responsive. Assets created by me.
   tech:
     - tech: HTML5 / YAML
     - tech: SCSS

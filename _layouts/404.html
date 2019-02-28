@@ -1,72 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{
+
+<head>
+  {{
       site.data.ga.google_analytics.tracking_tag
     }}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
-    <title>{{ site.title }}</title>
-    <meta name="generator" content="Jekyll v3.8.4" />
-    <meta property="og:title" content="{{ site.data.ga.site_desc.title }}" />
-    <meta property="og:locale" content="en_US" />
-    <meta
-      name="description"
-      content="{{ site.data.ga.site_desc.description }}"
-    />
-    <meta name="theme-color" content="#212529" />
-    <meta
-      property="og:description"
-      content="{{ site.data.ga.site_desc.description }}"
-    />
-    <link rel="canonical" href="{{ site.data.ga.site_desc.url }}" />
-    <meta property="og:url" content="{{ site.data.ga.site_desc.url }}" />
-    <meta
-      property="og:site_name"
-      content="{{ site.data.ga.site_desc.title }}"
-    />
-    {{
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+  <title>{{ site.data.ga.site_desc.title }}</title>
+  <meta name="generator" content="Jekyll v3.8.4" />
+  <meta property="og:title" content="{{ site.data.ga.site_desc.title }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="{{ site.data.ga.site_desc.description }}" />
+  <meta name="theme-color" content="#212529" />
+  <meta property="og:description" content="{{ site.data.ga.site_desc.description }}" />
+  <link rel="canonical" href="{{ site.data.ga.site_desc.url }}" />
+  <meta property="og:url" content="{{ site.data.ga.site_desc.url }}" />
+  <meta property="og:site_name" content="{{ site.data.ga.site_desc.title }}" />
+  {{
       site.data.ga.google_analytics.schema
     }}
-    <!-- End Jekyll SEO tag -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/assets/main.css" />
-    <link
-      type="application/atom+xml"
-      rel="alternate"
-      href="{{ site.data.ga.site_desc.url }}/feed.xml"
-      title="{{ site.title }}"
-    />
-    <link rel="icon" href="favicon.png" />
-    <meta
-      name="google-site-verification"
-      content="A57efludnssxmO1yNqmYfD4oaiCQ52cKIfG54AH6iVs"
-    />
-    {{
+  <!-- End Jekyll SEO tag -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/main.css" />
+  <link type="application/atom+xml" rel="alternate" href="{{ site.data.ga.site_desc.url }}/feed.xml"
+    title="{{ site.title }}" />
+  <link rel="icon" href="favicon.png" />
+  <meta name="google-site-verification" content="A57efludnssxmO1yNqmYfD4oaiCQ52cKIfG54AH6iVs" />
+  {{
       site.data.ga.google_analytics.head_tag
     }}
-  </head>
+</head>
 
-  <body>
-    {{ site.data.ga.google_analytics.head_tag }}
-    {% include header.html %} {% include 404.html %} {% include footer.html %}
+<body>
+  {{ site.data.ga.google_analytics.head_tag }}
+  {% include header.html %} {% include 404.html %} {% include footer.html %}
 
-    <script src="/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="/assets/js/scripts.js"></script>
-  </body>
+  <script src="/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+
 </html>
