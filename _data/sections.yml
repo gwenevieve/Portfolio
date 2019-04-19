@@ -19,9 +19,9 @@ project_section_one:
     - tech: CSS (SCSS)
     - tech: Bootstrap 4
     - tech: JavaScript + jQuery
-    - tech: Node.js (Express, SSE, Express)
+    - tech: Node.js (Express, SSE)
     - tech: JSON API (Questrade)
-    - tech: Gulp + Gulp
+    - tech: NPM + Gulp
     - tech: Sketch + Photoshop for concept art
 
 project_section_two:
