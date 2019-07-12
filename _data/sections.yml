@@ -25,6 +25,19 @@ project_section_one:
     - tech: Sketch + Photoshop for concept art
 
 project_section_two:
+  section_title: Forrrest WordPress Theme (Work In Progress)
+  section_desc: I've spent a lot of time with ACF (Advanced Custom Fields) recently, so I wanted to attempt to build a WordPress theme that was somewhat customizable without it. 
+  tech:
+    - tech: HTML5
+    - tech: CSS (SCSS)
+    - tech: Flexbox
+    - tech: JavaScript + jQuery
+    - tech: PHP
+    - tech: WordPress
+    - tech: Webpack
+    - tech: Sketch 
+
+project_section_three:
   section_title: LCBO API Project
   section_desc:
     Fully responsive website that uses the unofficial LCBO API to make
@@ -36,7 +49,7 @@ project_section_two:
     - tech: JSON API
     - tech: Middleman
 
-project_section_three:
+project_section_four:
   section_title: Portfolio
   section_desc: My portfolio website. Fully responsive. Assets created by me.
   tech:

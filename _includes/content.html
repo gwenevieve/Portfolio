@@ -63,20 +63,41 @@
       </div>
       <img class="project-image" src="/assets/img/stock-dashboard-macbook-iphone.png"
         alt="Screenshot of stock dashboard project on Macbook and iPhone" />
+		</div>
+		
+    <div class="projects-section__container pt-5 pb-3">
+      <div class="pr-5">
+        <h3 class="pt-5 pb-2">
+          {{ site.data.sections.project_section_two.section_title }}
+        </h3>
+        <p class="pb-4 project-desc">
+          {{ site.data.sections.project_section_two.section_desc }}
+        </p>
+        <ul class="pb-3">
+          {% for item in site.data.sections.project_section_two.tech %}
+          <li>{{ item.tech }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn button mr-3 mr-md-2">
+          <a href="https://github.com/gwenevieve/forrrest-theme">GitHub Link</a>
+        </button>
+      </div>
+      <!-- <img class="project-image" src="/assets/img/stock-dashboard-macbook-iphone.png"
+        alt="Screenshot of stock dashboard project on Macbook and iPhone" /> -->
     </div>
 
     <div class="projects-section__container pt-5 pb-3">
       <div class="pr-5">
         <h3 class="pb-3 pt-5">
-          {{ site.data.sections.project_section_two.section_title }}
+          {{ site.data.sections.project_section_three.section_title }}
         </h3>
         <p class="pb-4 project-desc">
           <span class="p__alert pb-2"><strong>API Deprecated</strong></span>
           </br>
-          {{ site.data.sections.project_section_two.section_desc }}
+          {{ site.data.sections.project_section_three.section_desc }}
         </p>
         <ul class="pb-3">
-          {% for item in site.data.sections.project_section_two.tech %}
+          {% for item in site.data.sections.project_section_three.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
         </ul>
@@ -95,13 +116,13 @@
     <div class="projects-section__container pt-5 pb-3">
       <div class="pr-5">
         <h3 class="pb-2 pt-5">
-          {{ site.data.sections.project_section_three.section_title }}
+          {{ site.data.sections.project_section_four.section_title }}
         </h3>
         <p class="pb-4 project-desc">
-          {{ site.data.sections.project_section_three.section_desc }}
+          {{ site.data.sections.project_section_four.section_desc }}
         </p>
         <ul class="pb-3">
-          {% for item in site.data.sections.project_section_three.tech %}
+          {% for item in site.data.sections.project_section_four.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
         </ul>
