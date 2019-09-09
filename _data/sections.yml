@@ -12,6 +12,20 @@ tech_stack:
     - skill: Bash
 
 project_section_one:
+  section_title: React Card Components
+  section_desc: Some 'social' card components commonly seen around the web, built n React. Includes avatars, sliders, and a list!
+  tech:
+    - tech: HTML5
+    - tech: CSS (SCSS)
+    - tech: Flexbox
+    - tech: JavaScript(ES6)
+    - tech: React
+    - tech: OpenWeather API
+    - tech: NPM
+    - tech: Deployed on Heroku
+    - tech: Unsplash for photographs
+
+project_section_two:
   section_title: Live Stock Dashboard + Search
   section_desc: A stock dashboard that gathers live stock data during market hours for my pre-selected watch list. Displays a graph of items in one of my play portfolios.
   tech:
@@ -24,7 +38,7 @@ project_section_one:
     - tech: NPM + Gulp
     - tech: Sketch + Photoshop for concept art
 
-project_section_two:
+project_section_three:
   section_title: Forrrest WordPress Theme (Work In Progress)
   section_desc: I've spent a lot of time with ACF (Advanced Custom Fields) recently, so I wanted to attempt to build a WordPress theme that was somewhat customizable without it. 
   tech:
@@ -37,7 +51,7 @@ project_section_two:
     - tech: Webpack
     - tech: Sketch 
 
-project_section_three:
+project_section_four:
   section_title: LCBO API Project
   section_desc:
     Fully responsive website that uses the unofficial LCBO API to make
@@ -49,7 +63,7 @@ project_section_three:
     - tech: JSON API
     - tech: Middleman
 
-project_section_four:
+project_section_five:
   section_title: Portfolio
   section_desc: My portfolio website. Fully responsive. Assets created by me.
   tech:

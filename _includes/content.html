@@ -45,7 +45,7 @@
   <div class="pl-sm-5 pl-md-5 col-10 offset-1 col-xs-8 col-sm-10 offset-sm-2 col-md-10 col-lg-10 col-xl-10 offset-xl-1">
 
     <div class="projects-section__container pt-5 pb-3">
-      <div class="pr-5">
+      <div class="pr-5 col-lg-6">
         <h3 class="pt-5 pb-2">
           {{ site.data.sections.project_section_one.section_title }}
         </h3>
@@ -58,15 +58,16 @@
           {% endfor %}
         </ul>
         <button class="btn button mr-3 mr-md-2">
-          <a href="https://github.com/gwenevieve/questrade-dashboard">GitHub Link</a>
+          <a href="https://github.com/gwenevieve/social-cards">GitHub Link</a>
+				</button>
+				<button class="btn button mt-4 mt-sm-0 mx-0 mx-md-2">
+          <a href="https://react-social-cards.herokuapp.com/">Live Link</a>
         </button>
       </div>
-      <img class="project-image" src="/assets/img/stock-dashboard-macbook-iphone.png"
-        alt="Screenshot of stock dashboard project on Macbook and iPhone" />
 		</div>
-		
+
     <div class="projects-section__container pt-5 pb-3">
-      <div class="pr-5">
+      <div class="pr-5 col-lg-6">
         <h3 class="pt-5 pb-2">
           {{ site.data.sections.project_section_two.section_title }}
         </h3>
@@ -79,6 +80,29 @@
           {% endfor %}
         </ul>
         <button class="btn button mr-3 mr-md-2">
+          <a href="https://github.com/gwenevieve/questrade-dashboard">GitHub Link</a>
+        </button>
+      </div>
+				<div class="col-lg-6">
+      		<img class="project-image" src="/assets/img/stock-dashboard-macbook-iphone.png"
+        	alt="Screenshot of stock dashboard project on Macbook and iPhone" />
+				</div>
+		</div>
+		
+    <div class="projects-section__container pt-5 pb-3">
+      <div class="pr-5 col-lg-6">
+        <h3 class="pt-5 pb-2">
+          {{ site.data.sections.project_section_three.section_title }}
+        </h3>
+        <p class="pb-4 project-desc">
+          {{ site.data.sections.project_section_three.section_desc }}
+        </p>
+        <ul class="pb-3">
+          {% for item in site.data.sections.project_section_three.tech %}
+          <li>{{ item.tech }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn button mr-3 mr-md-2">
           <a href="https://github.com/gwenevieve/forrrest-theme">GitHub Link</a>
         </button>
       </div>
@@ -87,17 +111,17 @@
     </div>
 
     <div class="projects-section__container pt-5 pb-3">
-      <div class="pr-5">
+      <div class="pr-5 col-lg-6">
         <h3 class="pb-3 pt-5">
-          {{ site.data.sections.project_section_three.section_title }}
+          {{ site.data.sections.project_section_four.section_title }}
         </h3>
         <p class="pb-4 project-desc">
           <span class="p__alert pb-2"><strong>API Deprecated</strong></span>
           </br>
-          {{ site.data.sections.project_section_three.section_desc }}
+          {{ site.data.sections.project_section_four.section_desc }}
         </p>
         <ul class="pb-3">
-          {% for item in site.data.sections.project_section_three.tech %}
+          {% for item in site.data.sections.project_section_four.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
         </ul>
@@ -109,20 +133,22 @@
           <a href="/projects/lcbo-api-project/">Live Link</a>
         </button>
       </div>
-      <img class="project-image" src="/assets/img/LCBO-project-ipad-iphone.png"
-        alt="Screenshot of LCBO project on iPad and iPhone" />
+				<div class="col-lg-6">
+      		<img class="project-image" src="/assets/img/LCBO-project-ipad-iphone.png"
+        		alt="Screenshot of LCBO project on iPad and iPhone" />
+				</div>
     </div>
 
     <div class="projects-section__container pt-5 pb-3">
-      <div class="pr-5">
+      <div class="pr-5 col-lg-6">
         <h3 class="pb-2 pt-5">
-          {{ site.data.sections.project_section_four.section_title }}
+          {{ site.data.sections.project_section_five.section_title }}
         </h3>
         <p class="pb-4 project-desc">
-          {{ site.data.sections.project_section_four.section_desc }}
+          {{ site.data.sections.project_section_five.section_desc }}
         </p>
         <ul class="pb-3">
-          {% for item in site.data.sections.project_section_four.tech %}
+          {% for item in site.data.sections.project_section_five.tech %}
           <li>{{ item.tech }}</li>
           {% endfor %}
         </ul>
@@ -130,8 +156,10 @@
           <a href="https://github.com/gwenevieve/portfolio/">GitHub Link</a>
         </button>
       </div>
-      <img class="project-image" src="/assets/img/portfolio-project-dell.png"
-        alt="Screenshot of portfolio project on Dell laptop" />
+				<div class="col-lg-6">
+      		<img class="project-image" src="/assets/img/portfolio-project-dell.png"
+        		alt="Screenshot of portfolio project on Dell laptop" />
+				</div>
     </div>
   </div>
 </div>
